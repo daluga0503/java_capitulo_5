@@ -9,14 +9,17 @@ public class Ejercicio16 {
         int i=0;
         boolean primo = true;
         n = sc.nextInt();
-        for( i = 2; i <n; i ++);
-            if ((n%i)==0){
+        for( i = 2; i < n; i ++){
+            if ((n % i)==0){
                 primo=false;
-            System.out.println("Número primo.");
-            }else{
-                System.out.println("Número no primo.");
             }
+        }
 
-            sc.close();
+        if(primo){
+            System.out.println("El número introducido es primo.");
+        } else {
+            System.out.println("El número introducido no es primo.");
+        }
+        sc.close();
     }
 }
