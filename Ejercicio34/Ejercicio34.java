@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.Maht;
+import java.math.*;;
 
 public class Ejercicio34 {
     public static void main(String[] args) {
@@ -50,16 +50,16 @@ public class Ejercicio34 {
         while(cont <= valores){
             v=  (int)(mezcla%10);
             if(v%2 == 0){
-            npar = npar+(long)(v*Maht.pow(10, (pares-contpares)));
+            npar = npar+(long)(v*Math.pow(10, (pares-contpares)));
             contpares++;
             } else {
-            nimpar = nimpar+(long)(v*Maht.pow(10,( impares-contimpares))) ;
+            nimpar = nimpar+(long)(v*Math.pow(10,( impares-contimpares))) ;
             contimpares++;
             }
             mezcla = mezcla/10;
             cont++;
         }
         System.out.printf("El número formado por los dígitos pares es : " + npar);
-        System.out.printf("El número formado por los dígitos impares es : " + nimpar);
+        System.out.printf("\nEl número formado por los dígitos impares es : " + nimpar);
     }
 }
