@@ -89,7 +89,7 @@ public class Ejercicio30 {
         if(segundodia>primerdia ){
         System.out.print("Entre las " + hora1 + ":00h del " + dias1);
         System.out.print(" y las " + hora2 + ":00h del " + dias2);
-        System.out.println(" hay " + ((( segundodia* 24) + hora2) - ((primerdia * 24) + hora1)) + " hora/s.");
+        System.out.println(" hay " + ((( segundodia * 24) + hora2) - ((primerdia * 24) + hora1)) + " hora/s.");
         }
         sc.close();
 
