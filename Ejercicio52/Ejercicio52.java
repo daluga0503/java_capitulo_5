@@ -5,35 +5,16 @@ public class Ejercicio52 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.print("Introduzca un número entero positivo: ");
-        int num = sc.nextInt();
-        int volteado=num;  
-        int contador=0;
-        int primero=0;
+        int num = sc.nextInt();  
+        int longitud=0;
         
         while(num>0){
-            volteado=(volteado*10)+(num%10);
             num/=10;
-            contador++;
+            longitud++;
         }
-        int volteado2=volteado;
-        
-        for(int i=0;i<contador;i++){
-            
-            if(i==0){
-                primero=volteado%10;
-            }
-            volteado/=10;
-        }
-        
-        for(int i=1;i<=contador;i++){
-            volteado2/=10;
-            if(contador!=i){
-                if(volteado2%10!=0){
-                System.out.print(volteado2%10);
-                }
-            }
-        }      
-        System.out.print(primero);
+        int primero = (int)(num / Math.pow(10, longitud-1));
+        int resto =  (int)(num % Math.pow(10, longitud-1));
+        System.out.printf("El número resultante es %d\n", resto*10+primero);  
         sc.close();
 
     }
