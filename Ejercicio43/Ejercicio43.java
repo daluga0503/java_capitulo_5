@@ -16,7 +16,7 @@ public class Ejercicio43 {
           volteado=(volteado*10)+(num%10);
           num /=10;
         }
-            System.out.print("Los numero partidos son el ");
+            System.out.print("Los numeros partidos son el ");
           
           while(volteado>0){
 

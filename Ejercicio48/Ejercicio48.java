@@ -14,7 +14,7 @@ public class Ejercicio48 {
     for (int i = 0; i < 10; i++) {
         find = false;
         aux = num;
-        while (aux > 0) {
+        while (aux > 0 && !find) {
         if (aux % 10 == i) {
             find = true;
         }
@@ -30,7 +30,7 @@ public class Ejercicio48 {
     for (int i = 0; i < 10; i++) {
         find = false;
         aux = num;
-        while (aux > 0) {
+        while (aux > 0 && !find) {
         if (aux % 10 == i) {
             find = true;
         }
